@@ -2,10 +2,26 @@
 
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
-const btnCloseModal = document.querySelector(".close_modal");
+const btnCloseModal = document.querySelector(".close-modal");
 const btnsOpenModal = document.querySelectorAll(".show-modal");
-console.log(btnsOpenModal);
 
-for (let i = 0; i < btnsOpenModal.length; i++) {
-  console.log(btnsOpenModal[i].textContent);
-}
+// Open Modal Function
+const openModal = () => {
+  modal.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+};
+
+// Close Modal Function
+const closeModal = () => {
+  modal.classList.add("hidden");
+  overlay.classList.add("hidden");
+};
+
+// Add event listener to the document (or a suitable parent element)
+document.addEventListener("click", event => {
+  if (event.target.classList.contains("show-modal")) {
+    openModal();
+  } else if (event.target === btnCloseModal || event.target === overlay) {
+    closeModal();
+  }
+});
