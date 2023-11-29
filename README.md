@@ -70,7 +70,7 @@ document.addEventListener("click", event => {
 - Now, regarding the four loop, it's generally not necessary to use a loop to add event listeners to multiple elements when you can achieve the same functionality using event delegation. Event delegation involves adding a single event listener to a parent element that listens for events on its child elements.
 - Event delegation is a design pattern in JavaScript where you attach a single event listener to a parent element (like the document or any other suitable parent) to listen for events on its child elements. When an event occurs on a child element, it bubbles up to the parent element, and the parent's event listener is triggered. This approach is particularly useful when you have a large number of elements to which you want to attach the same type of event listener.
 
-## Adds ESC modal function 
+### Adds ESC modal function 
 * Removes modal when esc is pressed. Before refactored version.
 
 ```
@@ -83,3 +83,10 @@ document.addEventListener("click", event => {
 //   }
 // });
 ```
+
+# Pig Game for more Dom manipulation
+
+### Pig Game Flowchart
+
+![Alt Text](./images/Flowchart.jpeg)
+
