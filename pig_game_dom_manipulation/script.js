@@ -33,5 +33,7 @@ btnRoll.addEventListener("click", function() {
     current0El.textContent = currentScore
   } else {
     // Switch to next player
+    // Work on this functionality next
   }
 });
+
